@@ -22,21 +22,22 @@ class RedDragon:
 
                     dragon.scan_of_ports(-1)
 
-                elif sub_option == 2:
-
-                    dragon.get_ip_of_domain(-1)
-
-                elif sub_option == 3:
-
-                    dragon.get_information_about_system(-1)
 
                 elif sub_option == -1:
 
                     os.system('clear')
 
+            elif option == 2:
+
+                dragon.manager_of_linux()
+
+            elif option == 3:
+
+                dragon.install_tools_of_pentest()
+
             else:
 
-                dragon.main()
+                dragon.main(-1)
 
         except Exception as error:
 
